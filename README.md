@@ -27,7 +27,7 @@ A logic-based machine learning algorithm, such as the Tsetlin Machine (TM), typi
 * CIFAR2: A binary classification variant of CIFAR-10, where the original ten classes are grouped into Animal and Non-Animal categories.
 * [Keyword Spotting (KWS)](https://www.kaggle.com/datasets/antfilatov/mini-speech-commands)
 
-Before Booleanizing, download KMNIST and KWS datasets and put the dataset directories at "raw\_dataset/".
+Before Booleanizing, download KMNIST and KWS datasets and put the dataset directories at "raw\_datasets/".
 
 ```sh
    python booleanization.py [dataset_name]
