@@ -33,7 +33,7 @@ Before Booleanizing, download KMNIST and KWS datasets and put the dataset direct
    python booleanization.py \[dataset\_name]
    ```
 
-Options for \[dataset\_name] are digits, mnist, fmnist, kmnist, cifar10, cifar2, kws and all, where "all" suggests producing Booleanized datasets for all above.
+Options for \[dataset_name] are digits, mnist, fmnist, kmnist, cifar10, cifar2, kws and all, where "all" suggests producing Booleanized datasets for all above.
 
 ### Training TM models for the Booleanized datasets
 
