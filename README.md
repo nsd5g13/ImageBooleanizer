@@ -30,7 +30,7 @@ A logic-based machine learning algorithm, such as the Tsetlin Machine (TM), typi
 Before Booleanizing, download KMNIST and KWS datasets and put the dataset directories at "raw\_dataset/".
 
 ```sh
-   python booleanization.py \[dataset\_name]
+   python booleanization.py \[dataset_name]
    ```
 
 Options for \[dataset_name] are digits, mnist, fmnist, kmnist, cifar10, cifar2, kws and all, where "all" suggests producing Booleanized datasets for all above.
@@ -46,7 +46,7 @@ Options for \[dataset_name] are digits, mnist, fmnist, kmnist, cifar10, cifar2, 
      s               Provide the value of "Strength" for literal include
      epochs          Proivde the number of training epochs
      budget          Provide the constrain for the maximal number of literals included in each clause
-     dataset\_name    Provide the name of the dataset. Options include digits, mnist, fmnist, kmnist, cifar10, cifar2, kws
+     dataset_name    Provide the name of the dataset. Options include digits, mnist, fmnist, kmnist, cifar10, cifar2, kws
    ```
 
 Example:
