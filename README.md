@@ -30,15 +30,15 @@ A logic-based machine learning algorithm, such as the Tsetlin Machine (TM), typi
 Before Booleanizing, download KMNIST and KWS datasets and put the dataset directories at "raw\_dataset/".
 
 ```sh
-   python booleanization.py \[dataset_name]
+   python booleanization.py [dataset_name]
    ```
 
-Options for \[dataset_name] are digits, mnist, fmnist, kmnist, cifar10, cifar2, kws and all, where "all" suggests producing Booleanized datasets for all above.
+Options for [dataset_name] are digits, mnist, fmnist, kmnist, cifar10, cifar2, kws and all, where "all" suggests producing Booleanized datasets for all above.
 
 ### Training TM models for the Booleanized datasets
 
 ```sh
-   usage: TM_Training.py clauses T s epochs budget dataset\_name
+   usage: TM_Training.py clauses T s epochs budget dataset_name
 
  positional arguments:
      clauses         Provide the number of clauses per class
