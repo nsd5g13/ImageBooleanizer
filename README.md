@@ -63,3 +63,26 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Preprocessing -->
+
+## How each dataset is proprocessed
+
+### MNIST, FMNIST and KMNIST
+* A specific threshold (75) is applied, converting each of the 784 raw features into a 1-bit value across all datapoints.
+
+### Digits
+* A specific threshold (7.5) is applied, converting each of the 64 raw features into a 1-bit value across all datapoints.
+
+### CIFAR
+* Feature extraction: Histogram of Oriented Gradients (HOG) is applied to extract high-level features from the raw. HOG parameters are as follows:
+- Window size: 32x32 pixels
+- Block size: 24x24 pixels
+- Block stride: 8x8 pixels
+- Cell size: 8x8 pixels
+- Number of bins: 9
+324 features, 18 for each column/row, are extracted through HOG.
+ 
+* Quantile binning is applied, converting each of the 324 extracted features into a 1-bit value across all datapoints.
+
+### KWS
+
