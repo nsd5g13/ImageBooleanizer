@@ -75,14 +75,18 @@ Example:
 
 ### CIFAR
 * Feature extraction: Histogram of Oriented Gradients (HOG) is applied to extract high-level features from the raw. HOG parameters are as follows:
-- Window size: 32x32 pixels
-- Block size: 24x24 pixels
-- Block stride: 8x8 pixels
-- Cell size: 8x8 pixels
-- Number of bins: 9
+Window size: 32x32 pixels
+Block size: 24x24 pixels
+Block stride: 8x8 pixels
+Cell size: 8x8 pixels
+Number of bins: 9
 324 features, 18 for each column/row, are extracted through HOG.
  
 * Quantile binning is applied, converting each of the 324 extracted features into a 1-bit value across all datapoints.
 
 ### KWS
-
+* Resampling and padding/truncating: raw audio is resampled to 16 kHz, padded/truncated to 16000 samples per audio.
+* Short-Time Fourier Transform (STFT), where frame length and step are 2560 and 480, respectively. Magnitude (abs) of the complext STFT is applied.
+* Mel-frequency feature extraction: converts spectrograms to Mel spectrograms using librosa, where log-amplitude scaling is applied.
+* 13 MFCC coefficients are extracted from the log-Mel spectrogram.
+* Quantile binning is applied, converting each of the 377 features (13 MFCC coefficients for each of the 29 time steps) into a 2-bit themometer code (3 bins) across all datapoints.
