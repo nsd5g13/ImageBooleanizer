@@ -25,7 +25,7 @@ A logic-based machine learning algorithm, such as the Tsetlin Machine (TM), typi
 * [Kuzushiji-MNIST (KMNIST)](https://github.com/rois-codh/kmnist)
 * [CIFAR10](https://keras.io/api/datasets/cifar10/)
 * CIFAR2: A binary classification variant of CIFAR-10, where the original ten classes are grouped into Animal and Non-Animal categories.
-* [Keyword Spotting (KWS)](https://www.kaggle.com/datasets/antfilatov/mini-speech-commands)
+* [Keyword Spotting (KWS)](https://www.kaggle.com/datasets/antfilatov/mini-speech-commands): the raw time series data is converted to spectrograms first.
 
 Before Booleanizing, download KMNIST and KWS datasets and put the dataset directories at "raw\_datasets/".
 
