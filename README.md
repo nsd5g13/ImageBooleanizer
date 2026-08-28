@@ -94,6 +94,6 @@ Number of bins: 9
 * Short-Time Fourier Transform (STFT), where frame length and step are 2560 and 480, respectively. Magnitude (abs) of the complext STFT is applied.
 * Mel-frequency feature extraction: converts spectrograms to Mel spectrograms using librosa, where log-amplitude scaling is applied.
 * 13 MFCC coefficients are extracted from the log-Mel spectrogram.
-* Quantile binning is applied, converting each of the 377 features (13 MFCC coefficients for each of the 29 time steps) into a 2-bit themometer code (3 bins) across all datapoints.
+* Quantile binning is applied, converting each of the 377 features (13 MFCC coefficients for each of the 29 time steps) into a 2-bit themometer code (3 bins) across all datapoints
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
